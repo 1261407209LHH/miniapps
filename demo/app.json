@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/video/video",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "科技新闻",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "color": "#ddd",
+    "selectedColor": "#f74f05",
+    "list": [{
+      
+      "pagePath": "pages/index/index",
+      "text": "新闻",
+      "iconPath":"./images/news1.png",
+      "selectedIconPath":"./images/news.png"
+    },{
+      "pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath":"./images/video.png",
+      "selectedIconPath":"./images/video1.png"
+    }]
+  }
+}

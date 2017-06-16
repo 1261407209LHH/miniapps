@@ -1,0 +1,25 @@
+<scroll-view class="container" scroll-y="true" lower-threshold="30" bindscrolltolower="scroll" style="height:500px;">
+  <swiper indicator-dots="true"
+    autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="news-content">
+    <view class="section">
+      <view class="news-item" wx:for="{{items}}">
+        <image src="{{item.picUrl}}"></image>
+        <view class="news-item-content">
+          <text class="detail">{{item.title}}</text>
+          <view class="website">
+            <text>{{item.description}}</text>
+            <text class="readerCount">{{item.ctime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+</scroll-view>
+

@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="item" wx:for="{{items}}" bindtap="play">
+    <image src="{{item.picUrl}}" class="newsPic"></image>
+    <view class="source">
+      <text>{{item.description}}</text>
+      <text class="count">{{item.ctime}}</text>
+    </view>
+    <view class="icon" >
+      <text>{{item.title}}</text>
+      <image src="../../images/{{path}}" class="play"></image>
+    </view>
+  </view>
+</view>
