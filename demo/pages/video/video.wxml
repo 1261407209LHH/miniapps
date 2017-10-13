@@ -1,9 +1,9 @@
 <view class="container">
-  <view class="item" wx:for="{{items}}" bindtap="play">
-    <image src="{{item.picUrl}}" class="newsPic"></image>
+  <view class="item" wx:for="{{items}}" data-video="{{item}}"  bindtap="play">
+    <image src="{{item.image_url}}" class="newsPic"></image>
     <view class="source">
-      <text>{{item.description}}</text>
-      <text class="count">{{item.ctime}}</text>
+      <text>{{item.source}}</text>
+      <text class="count">评论 {{item.comments_count}}</text>
     </view>
     <view class="icon" >
       <text>{{item.title}}</text>

@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/video/video",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/article/article"
     
   ],
   "window":{

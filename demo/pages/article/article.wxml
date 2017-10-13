@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="text">
+  {{title}}
+  </view>
+   <!-- <image src="{{image_Url[0]}}"></image>  -->
+   <swiper indicator-dots="true"
+    autoplay="" interval="3000" duration="1000">
+    <block wx:for="{{image_Url}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper> 
+  <view class='content'>{{abstract}}</view>
+  <view wx:for="{{label}}" id='tag'>
+    <view class='item'>{{item}}</view>
+  </view> 
+</view>
